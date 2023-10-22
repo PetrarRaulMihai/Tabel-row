@@ -1,0 +1,36 @@
+table{
+  border:1px solid gray;  
+  border-radius:5px;
+  margin:0 auto;  
+  margin-top:30px;
+}
+
+table tr{  
+  background-color: lightgrey;
+  
+}
+
+table th{
+  padding:20px;
+  font-weight: bold;
+  font-size:22px;
+  background-color:cadetblue;
+  width:140px;
+  height:30px;
+}
+
+table td{
+  border: 1px solid;   
+  border:none;
+  text-align: center;
+  width:150px;
+  height:30px;
+  border-radius:5px;
+  font-size: 18px;
+    
+}
+
+td:last-child{
+  color:red;  
+  cursor: pointer;
+}

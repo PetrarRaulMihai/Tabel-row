@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/create-form-button.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/list.css">
+  </head>
+  <body>
+
+    <!-- TABLE HTML STRUCTURE -->
+    <table id="table">
+      <tr id="tr">
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Hobbies</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+
+    <!-- CREATE STUDENT FORM, BUTTON GENERATOR -->
+    <button class="create-student-form-button" onclick="addForm()">Create Student</button>
+
+    <!-- CREATE STRUCTURE FOR FORM -->
+    <form id="form">
+      <h4>Create Student Form</h4>
+      <input id="idInput" class="user-input" type="number" placeholder="ID">
+      <input id="fNameInput" class="user-input" type="text" placeholder="First Name">
+      <input id="lNameInput" class="user-input" type="text" placeholder="Last Name">
+      <div class="radio-buttons-container">
+        <div>
+          <input type="radio" id="male" name="gender" required>
+          <label for="male">M</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender">
+          <label for="female">F</label>
+        </div>
+      </div>
+      <input id="addressInput" class="user-input" type="text" placeholder="Address">
+      <input id="hobbiesInput" class="user-input" type="text" placeholder="Hobbies">
+      <div class="form-buttons-container">
+        <button onclick="closeForm(); return false;">Close</button>
+        <button onclick="validate(); return false;">Create</button>
+        <!-- we set return false because we want to cancel submit action of form button -->
+        <!-- Return false in form Submit button click event to stop form submission, otherwise will dissappear the form after clicking, as submit action-->
+      </div>
+    </form>
+    <div class="list-container">
+      <label for="list">Added student to course</label>
+      <select name="list" id="dropList">      
+      </select>
+    </div>
+    
+    <script type="text/javascript" src="dynamic/createForm.js" async defer></script>
+    <script type="text/javascript" src="dynamic/addRow.js" async defer></script>
+    <script type="text/javascript" src="dynamic/dropList.js" async defer></script>
+    <script type="text/javascript" src="dynamic/deleteRow.js" async defer></script>
+    <script type="text/javascript" src="dynamic/formValidation.js" async defer></script>
+   
+  </body>
+</html>

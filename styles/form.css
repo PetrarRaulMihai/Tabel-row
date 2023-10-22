@@ -1,0 +1,68 @@
+#form{  
+  margin:0 auto;
+  margin-top:20px;
+  padding:0 20px 20px 20px;
+  max-width: 20%;
+  min-width: 250px;
+  border:1px solid gray;
+  background-color: white;
+  display:flex;  
+  flex-direction: column;
+  border-radius:5px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  gap:20px;  
+  /* display: none; */
+  
+}
+
+form h4{
+  text-align: center;
+}
+
+.radio-buttons-container{
+  display: flex;
+  justify-content: space-around;
+  padding:0 15px 0 15px;
+}
+
+.form-buttons-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;  
+}
+
+.form-buttons-container button{
+  cursor: pointer;
+  background-color: white;
+  border:1px solid gray;
+  border-radius:5px;
+  font-weight: bold;
+  height:30px;
+  width:150px;
+  transition: background-color 0.15s ease, opacity 0.15s;
+}
+
+.form-buttons-container button:hover{
+  background-color: cadetblue;
+}
+
+.form-buttons-container button:active{
+  opacity:0.8;
+}
+
+.user-input{
+  background-color: white;
+  border:1px solid gray;
+  border-radius:5px;
+  height:27px;  
+  outline:none;  
+  text-align: center;
+}
+
+
+/* remove input type number by-default-arrows-incrementers-logo */
+.user-input::-webkit-outer-spin-button,
+.user-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}

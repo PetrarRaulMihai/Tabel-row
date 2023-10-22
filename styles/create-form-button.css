@@ -1,0 +1,25 @@
+.create-student-form-button{
+  height:35px;
+  width:110px;
+  background-color: white;
+  border:1px solid gray;
+  border-radius:5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease; 
+  display:block;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-weight:bold;
+  font-size:13px;
+}
+
+/* for the margin:0 auto, trick to work is to display element as :block, margin: 0 auto; works only for block elements */
+/*also works for elements which are not inline*/
+
+.create-student-form-button:hover{
+  background-color: cadetblue;
+}
+
+.create-student-form-button:active{
+  transform: scale(0.90);
+}
